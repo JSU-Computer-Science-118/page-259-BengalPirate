@@ -22,18 +22,23 @@ int main()
   X1 = (-b + sqrt(discriminant))/(2*a);
   X2 = (-b - sqrt(discriminant))/(2*a);
 
-  if (discriminant == 0){
-    cout << "The single root is "<< X1 << endl;
-  }
+  if (2*a == 0)
+    cout<< "Invalid Entry ";
+  else
+  {
+      if (discriminant == 0){
+        cout << "The single root is "<< X1 << endl;
+      }  
 
-  else if(discriminant > 0){
-    cout << "Two real roots\n";
-    cout <<"- First root " << X1 << "\n";
-    cout <<"- Second root " << X2 << "\n";
-  }
+      else if(discriminant > 0){
+        cout << "Two real roots\n";
+        cout <<"- First root " << X1 << "\n";
+      
+        cout <<"- Second root " << X2 << "\n";
+      }
 
-  else if (discriminant < 0) {
-    cout << "Complex roots\n";
-  }
-  
+      else if (discriminant <0) {
+        cout << "Complex roots\n";
+    }
+    }
 }

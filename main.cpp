@@ -32,7 +32,7 @@ int main()
     cout <<"- Second root " << X_2 << "\n";
   }
 
-  else if (discriminant <0) {
+  else if (discriminant < 0) {
     cout << "Complex roots\n";
   }
   

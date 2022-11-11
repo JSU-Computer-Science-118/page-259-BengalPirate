@@ -22,7 +22,7 @@ int main()
   X1 = (-b + sqrt(discriminant))/(2*a);
   X2 = (-b - sqrt(discriminant))/(2*a);
 
-  if (2*a == 0)
+  if (a == 0)
     cout<< "Invalid Entry ";
   else
   {
